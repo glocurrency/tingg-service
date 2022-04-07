@@ -68,7 +68,7 @@ class FetchTransactionUpdateJob implements ShouldQueue, ShouldBeUnique, ShouldBe
             throw FetchTransactionUpdateException::stateNotAllowed($this->targetTransaction);
         }
 
-        if (empty($this->targetTransaction->batch_reference)) {
+        if (empty($this->targetTransaction->remote_reference)) {
             throw FetchTransactionUpdateException::emptyRemoteReference($this->targetTransaction);
         }
 
