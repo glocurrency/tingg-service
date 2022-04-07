@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.1](https://www.github.com/glocurrency/tingg-service/compare/v0.2.0...v0.2.1) (2022-04-07)
+
+
+### Bug Fixes
+
+* use proper property value ([ada3a64](https://www.github.com/glocurrency/tingg-service/commit/ada3a6475501faf7372e5e624fc7d3ee2e884426))
+
 ## [0.2.0](https://www.github.com/glocurrency/tingg-service/compare/v0.1.1...v0.2.0) (2022-04-07)
 
 
