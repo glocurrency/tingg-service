@@ -1,0 +1,37 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Call to an undefined static method GloCurrency\\\\Tingg\\\\Models\\\\MobileMoneyProvider\\:\\:firstWhere\\(\\)\\.$#"
+			count: 1
+			path: src/Jobs/CreateMobileMoneyTransactionJob.php
+
+		-
+			message: "#^Call to an undefined static method GloCurrency\\\\Tingg\\\\Models\\\\Transaction\\:\\:create\\(\\)\\.$#"
+			count: 1
+			path: src/Jobs/CreateMobileMoneyTransactionJob.php
+
+		-
+			message: "#^Call to an undefined static method GloCurrency\\\\Tingg\\\\Models\\\\Transaction\\:\\:firstWhere\\(\\)\\.$#"
+			count: 1
+			path: src/Jobs/CreateMobileMoneyTransactionJob.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 2
+			path: src/Jobs/CreateMobileMoneyTransactionJob.php
+
+		-
+			message: "#^Access to an undefined property GloCurrency\\\\Tingg\\\\Models\\\\Transaction\\:\\:\\$processingItem\\.$#"
+			count: 1
+			path: src/Listeners/UpdateProcessingItemStateSubscriber.php
+
+		-
+			message: "#^Method GloCurrency\\\\Tingg\\\\Models\\\\MobileMoneyProvider\\:\\:newFactory\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\Factory does not specify its types\\: TModel$#"
+			count: 1
+			path: src/Models/MobileMoneyProvider.php
+
+		-
+			message: "#^Method GloCurrency\\\\Tingg\\\\Models\\\\Transaction\\:\\:newFactory\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Factories\\\\Factory does not specify its types\\: TModel$#"
+			count: 1
+			path: src/Models/Transaction.php
+
