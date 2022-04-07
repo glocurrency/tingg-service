@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/glocurrency/tingg-service/compare/v0.1.1...v0.2.0) (2022-04-07)
+
+
+### Features
+
+* add fetch command ([8aa51e5](https://www.github.com/glocurrency/tingg-service/commit/8aa51e5370be8c78596839610c393d8c4e198e75))
+
+
+### Miscellaneous Chores
+
+* ignore error ([e3b4f86](https://www.github.com/glocurrency/tingg-service/commit/e3b4f8685f313d084cb3796aebd63fe2cbf66d40))
+
 ### [0.1.1](https://www.github.com/glocurrency/tingg-service/compare/v0.1.0...v0.1.1) (2022-04-07)
 
 
