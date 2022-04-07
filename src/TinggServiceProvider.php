@@ -3,6 +3,7 @@
 namespace GloCurrency\Tingg;
 
 use Illuminate\Support\ServiceProvider;
+use GloCurrency\Tingg\Console\FetchTransactionsUpdateCommand;
 use GloCurrency\Tingg\Config;
 use BrokeYourBike\Tingg\Interfaces\ConfigInterface;
 
@@ -28,6 +29,7 @@ class TinggServiceProvider extends ServiceProvider
     {
         $this->configure();
         $this->bindConfig();
+        $this->registerCommands();
     }
 
     /**
@@ -79,6 +81,20 @@ class TinggServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__.'/../database/migrations' => $this->app->databasePath('migrations'),
             ], 'tingg-migrations');
+        }
+    }
+
+    /**
+     * Register the package's commands.
+     *
+     * @return void
+     */
+    protected function registerCommands()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                FetchTransactionsUpdateCommand::class,
+            ]);
         }
     }
 }

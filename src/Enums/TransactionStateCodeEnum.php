@@ -16,6 +16,7 @@ enum TransactionStateCodeEnum: string
     case UNEXPECTED_ERROR_CODE = 'unexpected_error_code';
     case NO_AUTH_CODE_PROPERTY = 'no_transaction_auth_code_property';
     case UNEXPECTED_AUTH_CODE = 'unexpected_transaction_auth_code';
+    case NO_REMOTE_REFERENCE = 'no_remote_reference';
     case PAID = 'paid';
     case PROCESSING = 'processing';
     case FAILED = 'failed';
@@ -73,6 +74,7 @@ enum TransactionStateCodeEnum: string
             self::NO_AUTH_CODE_PROPERTY => MProcessingItemStateCodeEnum::EXCEPTION,
             self::UNEXPECTED_AUTH_CODE => MProcessingItemStateCodeEnum::EXCEPTION,
             self::PROCESSING => MProcessingItemStateCodeEnum::PROVIDER_PENDING,
+            self::NO_REMOTE_REFERENCE => MProcessingItemStateCodeEnum::EXCEPTION,
             self::PAID => MProcessingItemStateCodeEnum::PROCESSED,
             self::FAILED => MProcessingItemStateCodeEnum::MANUAL_RECONCILIATION_REQUIRED,
             self::API_ERROR => MProcessingItemStateCodeEnum::PROVIDER_NOT_ACCEPTING_TRANSACTIONS,
