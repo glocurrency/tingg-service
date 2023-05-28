@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.2](https://www.github.com/glocurrency/tingg-service/compare/v0.2.1...v0.2.2) (2023-05-28)
+
+
+### Bug Fixes
+
+* blocks 0 ([e1b6ee5](https://www.github.com/glocurrency/tingg-service/commit/e1b6ee505cfb620fac3b3c55fdce1f24e9186677))
+
 ### [0.2.1](https://www.github.com/glocurrency/tingg-service/compare/v0.2.0...v0.2.1) (2022-04-07)
 
 
