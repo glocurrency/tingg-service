@@ -16,7 +16,7 @@
         "brokeyourbike/country-casts-laravel": "^0.1.1",
         "brokeyourbike/has-source-model": "^2.0",
         "brokeyourbike/tingg-api-client": "^0.3",
-        "glocurrency/middleware-blocks": "^0.4.3",
+        "glocurrency/middleware-blocks": "^0",
         "illuminate/contracts": "^8.0|^9.0",
         "illuminate/database": "^8.0|^9.0"
     },
@@ -53,11 +53,7 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "repositories": {
-        "packagist.org": false,
-        "private-packagist": {
-            "type": "composer",
-            "url": "https://repo.packagist.com/glocurrency/"
-        }
+        "packagist.com": false
     },
     "version": "0.2.1"
 }
